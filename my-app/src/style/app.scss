@@ -1,0 +1,122 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+  
+    h1, h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    .transaction-form {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+      .row {
+        gap: 15px;
+
+        .col-md-3 {
+            flex: 1 0 25%; /* Har bir input uchun 25% kenglik */
+          }
+
+        .form-control {
+          border-radius: 5px;
+        }
+      }
+  
+      button {
+        width: 100%;
+        font-weight: bold;
+      }
+    }
+  
+    .transaction-list {
+      margin-top: 30px;
+  
+      ul {
+        padding: 0;
+        list-style: none;
+  
+        .list-group-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 15px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          background: #ffffff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+          .btn-danger {
+            font-size: 12px;
+          }
+        }
+      }
+  
+      input {
+        border-radius: 5px;
+      }
+    }
+  
+    .chart-container {
+      margin-top: 40px;
+      background: #f1f5f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  
+      canvas {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  
+    /* Filter Inputs */
+    .row {
+      margin-bottom: 20px;
+  
+      .form-control {
+        border-radius: 5px;
+      }
+    }
+  
+    /* Filter Input Styles */
+    input[type="date"],
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .transaction-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      .row {
+        gap: 10px;
+        .form-control {
+          width: 100%;
+        }
+      }
+    }
+  
+    /* Responsiv dizayn */
+    @media (max-width: 767px) {
+      .transaction-form {
+        padding: 15px;
+      }
+  
+      .transaction-list ul {
+        padding: 10px;
+      }
+  
+      .chart-container {
+        padding: 15px;
+      }
+    }
+  }
+  

@@ -1,0 +1,36 @@
+.currency-list {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h3 {
+    text-align: center;
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    .currency-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+
+      &:hover {
+        background-color: #e9e9e9;
+      }
+
+      .currency-name {
+        font-weight: bold;
+      }
+
+      .currency-rate {
+        color: #007bff;
+      }
+    }
+  }
+}
